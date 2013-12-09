@@ -1,10 +1,11 @@
 from models import Transaction
 import os
 from flask import Flask, render_template, request, redirect, url_for, json, jsonify
+from werkzeug.contrib.fixers import ProxyFix
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 @app.route('/')
 def index():
