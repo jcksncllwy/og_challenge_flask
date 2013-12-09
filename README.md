@@ -1,7 +1,7 @@
 og_challenge_flask
 ==================
 
-**[DEMO]**(http://fierce-river-3865.herokuapp.com/)
+**[DEMO](http://fierce-river-3865.herokuapp.com/)**
 
 This is a basic application for parsing csv transaction data from OpenGov and returning an aggregate annual report in JSON.
 
